@@ -10,7 +10,7 @@ function PaleteWrapper(props) {
   return (
     <div>
       <nav>
-        <button className='nav-back-btn' onClick={props.resetPalette}>
+        <button className='nav-action-btn' onClick={props.resetPalette}>
           <img src={backIcon} alt='Back to paletts list' />
         </button>
 

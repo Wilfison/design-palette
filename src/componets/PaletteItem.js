@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import PropTypes from 'prop-types'
 
 import { copyColorToClipboardAsync } from '../actions'
 import { AppContext } from '../App'
@@ -23,12 +24,21 @@ function PaletteItem(props) {
   return (
     <button
       className='palette-show-color'
-      style={{backgroundColor: props.color}}
-      onClick={() => copyToClipboard(props.color)}
+      style={{backgroundColor: props.color.value}}
+      onClick={() => copyToClipboard(props.color.value)}
     >
-        { isCopied && <span className='palette-show-msg-success'>Copiado</span> }
+      <span className='palette-show-color-label'>{props.color.label}</span>
+
+      { isCopied && <span className='palette-show-msg-success'>Copiado</span> }
     </button>
   )
+}
+
+PaletteItem.propTypes = {
+  color: PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.string
+  })
 }
 
 export default PaletteItem

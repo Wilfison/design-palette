@@ -7,7 +7,7 @@ Use and manage famous color palettes in your browser
 
 ## Install from official stores
 
-- Google Chrome (working in progress)
+- [Web Store](https://chrome.google.com/webstore/detail/design-palette/nmjnpjkmmhbgannednjlojkcocaginoc) (Google Chrome, Chromium)
 - Firefox (working in progress)
 <!-- - [Google Chrome](#)
 - [Firefox](#) -->
